@@ -72,7 +72,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#F8FAFB] via-[#F8FAFB]/80 to-transparent lg:via-[#F8FAFB]/60"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-[#F8FAFB] via-transparent to-[#F8FAFB]/60"></div>
           </div>
-          <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10">
+          <div className="max-w-none mx-auto px-6 lg:px-12 w-full relative z-10">
             {/* Top row: Giant headline + Clinic status badge on the right */}
             <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-6">
               <div className="max-w-4xl">
