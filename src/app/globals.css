@@ -157,3 +157,19 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body {
+    scroll-behavior: auto;
+  }
+
+  html.lenis {
+    scroll-behavior: auto !important;
+  }
+}

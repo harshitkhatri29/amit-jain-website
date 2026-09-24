@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Caveat } from "next/font/google";
 import "./globals.css";
+import MotionRoot from "@/components/MotionRoot";
 
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -38,7 +39,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <MotionRoot>{children}</MotionRoot>
+      </body>
     </html>
   );
 }
