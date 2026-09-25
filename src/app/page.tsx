@@ -14,7 +14,12 @@ export default function Home() {
     img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAwklfb1rj9-_Nhwiv1PZEfNWYiCPf5KGellWwrv4FvvWVULeT64oE2S-FeBb_v1ljpGAunIJrC-y-yJxvuXYDk3Tt-Wa_gHk7Ct1BTJ8LG73sXsh8nNvzW-BMxHWXmkgnR2WmGnRLuoKqhovCboWgmhg-Qi6vD3OMRsatg6sSqrbLQKm6cJXsNggtdg0y19dIQCKU9CbYOsisER0SDBkyzLeQTAGSuUEgB-aS2tJJMVz6sAk1aihDovg"
   });
 
-  const handleHover = (id, title, desc, img) => {
+  const handleHover = (
+    id: string,
+    title: string,
+    desc: string,
+    img: string
+  ) => {
     setActiveTreatment({ id, title, desc, img });
   };
   const handleEnquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
